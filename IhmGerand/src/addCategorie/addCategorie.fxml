@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import customSearchBar.AddSearchBar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addCategorie.AddCategorie">
+   <children>
+      <Label text="Nom:" underline="true">
+         <VBox.margin>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </VBox.margin></Label>
+      <TextField fx:id="nameText">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin></TextField>
+      <Label text="Sous-categories:" underline="true">
+         <VBox.margin>
+            <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <FlowPane fx:id="flow" prefHeight="70.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin></FlowPane>
+      <AddSearchBar fx:id="addSearchBar">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></AddSearchBar>
+      <HBox prefWidth="200.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" onAction="#onCancel" text="Annuler" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#onDelete" text="Supprimer" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#onAdd" text="Ajouter" />
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

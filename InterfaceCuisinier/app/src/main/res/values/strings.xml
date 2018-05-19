@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InterfaceCuisinier</string>
+    <string name="commandes">COMMANDES</string>
+    <string name="missingTitle">SIGNALER INGREDIENT MANQUANT</string>
+    <string name="title_activity_missing_ingredient">MissingIngredientActivity</string>
+    <string name="categorie">Catégorie</string>
+    <string name="ingredients">Ingrédients</string>
+</resources>

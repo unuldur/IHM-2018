@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_return"
+        android:icon="@drawable/ic_arrow_back_black_24dp"
+        android:title="@string/return_string"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/menu_homepage"
+        android:checkable="false"
+        android:checked="false"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/homepage_string"
+        app:showAsAction="always|withText" />
+    <group
+        android:id="@+id/group_commande"
+        android:enabled="true"
+        android:visible="true" >
+        <item
+            android:id="@+id/menu_commande"
+            android:enabled="false"
+            android:title="Commande :"
+            android:visible="true"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/menu_price"
+            android:title="0 EUR"
+            android:enabled="false"
+            app:showAsAction="always" />
+    </group>
+    <item
+        android:id="@+id/menu_game"
+        android:icon="@drawable/ic_videogame_asset_black_24dp"
+        android:title="Jeux"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/menu_client"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Se connecter"
+        app:showAsAction="always|withText" />
+</menu>

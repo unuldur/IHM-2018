@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000</color>
+    <color name="white">#FFF</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="lightGrey">#EEEE</color>
+    <color name="lightBlue">#B9D9DF</color>
+    <color name="lightGreen">#BFFFA4</color>
+    <color name="red">#FF0000</color>
+    <color name="mediumGrey">#DADADA</color>
+
+    <color name="taupe">#4F0000</color>
+</resources>

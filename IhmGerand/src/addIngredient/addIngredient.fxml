@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import customSearchBar.ComboSearchBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addIngredient.AddIngredient">
+   <children>
+      <Label text="Nom:" underline="true">
+         <VBox.margin>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin></Label>
+      <TextField fx:id="nomField">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+         </VBox.margin></TextField>
+      <Label text="Allergenes:" underline="true">
+         <VBox.margin>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </VBox.margin></Label>
+      <FlowPane fx:id="flowAll" prefHeight="50.0">
+         <VBox.margin>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </VBox.margin></FlowPane>
+       <ComboSearchBox fx:id="searchBox">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+         </VBox.margin></ComboSearchBox>
+      <Label text="Types:" underline="true">
+         <VBox.margin>
+            <Insets bottom="5.0" left="10.0" top="5.0" />
+         </VBox.margin></Label>
+       <FlowPane fx:id="flowType">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin></FlowPane>
+      <HBox>
+         <children>
+            <Button mnemonicParsing="false" onAction="#onCancel" text="Annuler" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="suprimerButton" mnemonicParsing="false" onAction="#onDelete" text="Suprimer" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#onAdd" text="Ajouter" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

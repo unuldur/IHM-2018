@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@null"
+    tools:context="com.jeyarajaratnam.j.ihm.interfacecuisinier.MainActivity"
+    android:padding="@dimen/normal_padding">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/tv_titleCommand"
+        android:text="@string/commandes"
+        android:gravity="center"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/commandList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/bt_signaler"
+        android:background="@color/white"
+        android:text="Signaler Ingrédients Manquants"
+        android:tag="signal"
+
+        android:textSize="@dimen/txt_size"
+        android:textColor="@color/red"/>
+</LinearLayout>

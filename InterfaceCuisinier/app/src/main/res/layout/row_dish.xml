@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:id="@+id/main_ll">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/title_ll"
+        android:background="@drawable/blue_background">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:background="@drawable/details_blue_bg"
+            android:id="@+id/details_ll"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nb_tv"
+                android:layout_gravity="center"
+                android:text="C023"
+                android:textSize="@dimen/txt_size"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/waiting_tv"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="11 min"
+                android:textSize="@dimen/txt_size"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/arrow"
+                android:visibility="gone"
+                android:src="@drawable/arrow_bas"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:adjustViewBounds="true"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_tv"
+            android:layout_weight="7"
+            android:text="TITRE DU MACHIN"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+
+
+
+
+    </LinearLayout>
+
+    
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_tv"
+        android:text="FRITS\nBLABLA\nDESTRUCS\nDESAURTESMACHINS\netÇa"
+        android:gravity="center"
+        android:textSize="@dimen/txt_size"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+    
+
+
+
+</LinearLayout>

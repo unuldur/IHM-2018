@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Legumes">
+        <item>Tomate</item>
+        <item>Aubergine</item>
+        <item>Salade</item>
+        <item>Concombre</item>
+        <item>Courgette</item>
+        <item>Poireau</item>
+        <item>Carotte</item>
+        <item>Oignon</item>
+        <item>Poivron rouge</item>
+        <item>Poivron vert</item>
+    </string-array>
+
+    <string-array name="Fruits">
+        <item>Olive</item>
+        <item>Pomme</item>
+        <item>Poire</item>
+        <item>Cerise</item>
+        <item>Fraise</item>
+        <item>Groseille</item>
+        <item>Orange</item>
+        <item>Citron</item>
+        <item>Framboise</item>
+        <item>Banane</item>
+        <item>Myrtille</item>
+        <item>Mangue</item>
+    </string-array>
+
+    <string-array name="Surgelés">
+
+        <item>Thon</item>
+        <item>Mascarpone</item>
+        <item>Frite</item>
+        <item>Viande hachée</item>
+        <item>Côte d\'agneau</item>
+        <item>Boeuf</item>
+    </string-array>
+
+    <string-array name="Pâtisseries">
+        <item>Cacao</item>
+        <item>Chantilly</item>
+        <item>Oeuf</item>
+        <item>Farine</item>
+        <item>Vanille</item>
+        <item>Beurre</item>
+    </string-array>
+
+</resources>

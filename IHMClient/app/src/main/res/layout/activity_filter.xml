@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ihm.tydrichova.upmc.fr.ihmclient.FilterActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:id="@+id/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight = "2"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorToolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width= "match_parent"
+        android:layout_height = "0dp"
+        android:layout_weight = "1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="FILTRE"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dieteLayout"
+        android:layout_width= "match_parent"
+        android:layout_height = "0dp"
+        android:layout_weight = "3"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/dieteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diète:" />
+
+        <LinearLayout
+            android:id="@+id/dieteRow1Layout"
+            android:layout_width= "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <CheckBox
+                android:id="@+id/vegetarianCheckBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="végétarien" />
+            <CheckBox
+                android:id="@+id/lactoseCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight = "1"
+                android:layout_gravity="right"
+                android:text="sans lactose" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dieteRow2Layout"
+            android:layout_width= "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <CheckBox
+                android:id="@+id/veganCheckBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="vegan"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:id="@+id/glutenCheckBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="sans gluten"
+                android:layout_weight="1"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/searchIngredients"
+        android:layout_width="match_parent"
+        android:layout_height = "0dp"
+        android:layout_weight = "3"
+        android:orientation="vertical"
+        tools:ignore="Suspicious0dp">
+        <EditText android:id="@+id/searchIngredientsEditext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Chercher allergene..."
+            android:inputType="textVisiblePassword"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchIngredientsListView"
+            android:background="#aaaaaa"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/validateButtonLayout">
+        <Button
+            android:id="@+id/validerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valider"
+            android:onClick="validerAction"/>
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
